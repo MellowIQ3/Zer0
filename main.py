@@ -9,6 +9,9 @@ import json
 from discord import Interaction  # ✅ これが正しい
 from discord import app_commands, Interaction, Embed, Color, CategoryChannel, Role,PermissionOverwrite
 
+from keep_alive import keep_alive
+
+keep_alive()  
 
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
